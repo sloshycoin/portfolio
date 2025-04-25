@@ -3,7 +3,7 @@
 ## Header
 
 Brendan A. Burgee
-<brendanburgee@gmail.com> • 310-592-5937 • <https://www.linkedin.com/in/brendan-burgee/> • [Portfolio URL]
+310-592-5937 • <brendanburgee@gmail.com> • <https://www.linkedin.com/in/brendan-burgee/> • <https://sloshycoin.github.io/portfolio/>
 
 ## Professional Summary
 
