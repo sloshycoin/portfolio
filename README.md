@@ -49,7 +49,7 @@ Results-driven Software Developer with 6+ years of experience designing, develop
 - IBM Full Stack Software Developer
 - IBM Full-Stack JavaScript Developer
 - IBM Front-End Software Developer
-- IBM Back-End Developement
+- IBM Back-End Development
 
 ## Projects
 
