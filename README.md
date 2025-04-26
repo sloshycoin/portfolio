@@ -26,13 +26,13 @@ Results-driven Software Developer with 6+ years of experience designing, develop
 
 ## Professional Experience
 
-Software Developer 2 | Lumen Technologies | 07/2023 – Present
+**Software Developer 2** | Lumen Technologies | 07/2023 – Present
 
 - Developed and maintained high-availability web applications handling hundreds of concurrent, daily users.
 - Spearheaded the migration of legacy systems to microservices architecture, improving service speeds by 90%.
 - Mentored junior developers and led code reviews to enforce engineering best practices and promote a growth environment.
 
-Operations Engineer 2 | Centurylink | 09/2018 – 07/2023
+**Operations Engineer 2** | Centurylink | 09/2018 – 07/2023
 
 - Designed and developed a standalone framework for automating network outages and reducing time to restore.
 - Introduced the first Robotic Process Automation workflow to the Global Network Operations Center.
@@ -42,7 +42,7 @@ Operations Engineer 2 | Centurylink | 09/2018 – 07/2023
 
 ### Degrees
 
-**Bachelor of Science in Physics** Fort Hays State University – Hays, KS
+**Bachelor of Science in Physics** | Fort Hays State University | Hays, KS
 
 ### Certifications
 
