@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brendan A. Burgee - Lead Software Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background: white;
+            font-size: 11px;
+        }
+        
+        .container {
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+            min-height: 11in;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #2c5aa0;
+            margin-bottom: 25px;
+        }
+        
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+        
+        .title {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        
+        .contact-info {
+            font-size: 10px;
+            color: #555;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-info a {
+            color: #3771c9;
+            text-decoration: none;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #2c5aa0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            padding-bottom: 3px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .summary {
+            text-align: justify;
+            color: #444;
+            line-height: 1.5;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .skill-category {
+            margin-bottom: 8px;
+        }
+        
+        .skill-category strong {
+            color: #2c5aa0;
+            font-size: 10px;
+            display: block;
+            margin-bottom: 2px;
+        }
+        
+        .skill-list {
+            font-size: 9px;
+            color: #555;
+            line-height: 1.3;
+        }
+        
+        .job {
+            margin-bottom: 18px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            color: #333;
+            font-size: 12px;
+            margin-right: 8px;
+        }
+        
+        .company {
+            color: #2c5aa0;
+            font-weight: 500;
+            margin-left: 4px;
+        }
+        
+        .dates {
+            color: #666;
+            font-size: 10px;
+            font-style: italic;
+        }
+        
+        .role-subtitle {
+            font-size: 11px;
+            color: #2c5aa0;
+            font-weight: 600;
+            margin: 5px 0 3px 0;
+        }
+        
+        .job-description {
+            margin-left: 0;
+        }
+        
+        .job-description ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .job-description li {
+            margin-bottom: 4px;
+            position: relative;
+            padding-left: 15px;
+            font-size: 10px;
+            line-height: 1.4;
+        }
+        
+        .job-description li::before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            color: #2c5aa0;
+            font-size: 8px;
+            top: 1px;
+        }
+        
+        .project {
+            margin-bottom: 12px;
+            border-left: 3px solid #e0e0e0;
+            padding-left: 12px;
+        }
+        
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            color: #333;
+            font-size: 11px;
+        }
+        
+        .project-meta {
+            font-size: 9px;
+            color: #666;
+        }
+        
+        .project-tech {
+            font-size: 9px;
+            color: #2c5aa0;
+            margin-bottom: 3px;
+            font-weight: 500;
+        }
+        
+        .project-description {
+            font-size: 10px;
+            line-height: 1.4;
+            color: #555;
+        }
+        
+        .education-item {
+            margin-bottom: 8px;
+        }
+        
+        .degree {
+            font-weight: bold;
+            color: #333;
+            font-size: 11px;
+        }
+        
+        .school {
+            color: #666;
+            font-size: 10px;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #e3f2fd 0%, transparent 100%);
+            padding: 2px 4px;
+            border-radius: 2px;
+        }
+        
+        @media print {
+            .container {
+                box-shadow: none;
+                padding: 0.4in;
+            }
+            .print-hide {
+                display: none !important;
+            }
+            body {
+                font-size: 10px;
+            }
+            
+            .name {
+                font-size: 24px;
+            }
+            
+            .title {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="print-hide" style="display: flex; justify-content: flex-end; margin: 10px; gap: 8px;">
+        <button onclick="window.print()" style="background: #2c5aa0; color: white; border: none; padding: 6px 14px; border-radius: 3px; cursor: pointer; font-size: 11px;">Download PDF</button>
+        <button onclick="downloadPNG()" style="background: #2c5aa0; color: white; border: none; padding: 6px 14px; border-radius: 3px; cursor: pointer; font-size: 11px;">Download PNG</button>
+    </div>
+    <div class="container">
+        <header class="header">
+            <h1 class="name">Brendan A. Burgee</h1>
+            <div class="title">Lead Software Developer</div>
+            <div class="contact-info">
+                <span><strong>Email:</strong> <a href="mailto:brendanburgee@gmail.com">brendanburgee@gmail.com</a></span>
+                <span><strong>Phone:</strong> 310.592.5937</span>
+                <span><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/brendan-burgee/">linkedin.com/in/brendan-burgee</a></span>
+                <span><strong>Portfolio:</strong> <a href="https://sloshycoin.github.io/portfolio/">sloshycoin.github.io/portfolio</a></span>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <div class="summary">
+                Results-driven Lead Software Developer with 6+ years of experience in telecommunications, specializing in Angular-based enterprise applications and ITIL-compliant ticketing systems. Currently leading the development of a cutting-edge ITIL-style dashboard at Lumen Technologies. Proven track record of architecting scalable solutions, mentoring development teams, and driving system performance improvements up to <strong>90%</strong>. Expert in full-stack development with deep knowledge of Angular, TypeScript, Node.js, and Express.
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <strong>Frontend Development</strong>
+                    <div class="skill-list">Angular, TypeScript, JavaScript, React, Component-based Architecture, Responsive Design</div>
+                </div>
+                <div class="skill-category">
+                    <strong>Backend Development</strong>
+                    <div class="skill-list">Node.js, Express, REST API Design, Middleware Implementation, Role-based Authorization</div>
+                </div>
+                <div class="skill-category">
+                    <strong>Databases & Storage</strong>
+                    <div class="skill-list">MySQL, MS SQL, MongoDB, Redis</div>
+                </div>
+                <div class="skill-category">
+                    <strong>DevOps & Tools</strong>
+                    <div class="skill-list">Docker, Kubernetes, Git, CI/CD Pipelines, Linux/Unix Administration, Bash Scripting</div>
+                </div>
+                <div class="skill-category">
+                    <strong>Cloud & Monitoring</strong>
+                    <div class="skill-list">Azure, IBM Cloud, Performance Monitoring, System Optimization</div>
+                </div>
+                <div class="skill-category">
+                    <strong>Quality & Process</strong>
+                    <div class="skill-list">Unit Testing, Karma, Jasmine, Code Reviews, Agile/Scrum, ITIL Principles</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Software Developer 2</span> | <span class="company">Lumen Technologies</span>
+                    </div>
+                    <div class="dates">07/2023 – Present</div>
+                </div>
+                
+                
+                <div class="job-description">
+                    <ul>
+                        <li><strong>Leading the design and development</strong> of an Angular-based ITIL-compliant ticketing dashboard serving hundreds of concurrent daily users across global telecommunications operations</li>
+                        <li><strong>Architected the migration</strong> from legacy LAMP stack to modern MEAN stack (MySQL/Express/Angular/Node), achieving 90% improvement in response times and enabling real-time data delivery</li>
+                        <li><strong>Implemented modular, component-based architecture</strong> using Angular best practices including dependency injection, ensuring scalability and code reusability</li>
+                        <li><strong>Developed robust Express.js backend</strong> with comprehensive API design, middleware implementation, and integration with multiple MySQL/MS SQL databases</li>
+                        <li><strong>Conducting code reviews and mentoring junior developers</strong>, fostering engineering best practices and promoting continuous learning culture</li>
+                        <li><strong>Collaborating with cross-functional teams</strong> to align technical deliverables with business requirements and stakeholder expectations</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Operations Engineer</span> | <span class="company">Centurylink</span>
+                    </div>
+                    <div class="dates">09/2018 – 07/2023</div>
+                </div>
+                
+                
+                <div class="job-description">
+                    <ul>
+                        <li><strong>Designed and developed standalone automation framework</strong> for network outage management, significantly reducing mean time to resolution</li>
+                        <li><strong>Pioneered Robotic Process Automation (RPA)</strong> implementation in Global Network Operations Center, introducing first workflow of its kind</li>
+                        <li><strong>Implemented 40+ ticketing workflows</strong> integrating with ITIL-compliant systems, reducing call center volume and improving operational efficiency</li>
+                        <li><strong>Performed security analysis and vulnerability assessment</strong> across network automation systems, implementing mitigation strategies</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Key Projects</h2>
+            
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-title">GOC Dashboard (Service Support Dashboard)</div>
+                    <div class="project-meta">Lead Developer | In Progress</div>
+                </div>
+                <div class="project-tech"><strong>Technologies:</strong> Angular, TypeScript, Node.js, Express, MySQL, MS SQL, Git</div>
+                <div class="project-description">
+                    Enterprise-level ITIL ticketing dashboard consolidating multiple company resources into a unified single-page application. Features standalone Angular components providing microservices for network ticket management, with Express API backend connecting to multiple database systems and internal REST APIs.
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-title">Health Check API</div>
+                    <div class="project-meta">Lead Developer | Production</div>
+                </div>
+                <div class="project-tech"><strong>Technologies:</strong> Python, FastAPI, Redis, Docker, Kubernetes, CI/CD</div>
+                <div class="project-description">
+                    Scalable REST API serving network diagnostics across North America, processing hundreds of device connections per second using asynchronous programming. Implements Redis queuing, load balancing, and rate limiting for optimal network performance.
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-title">Automated Outage Manager</div>
+                    <div class="project-meta">Lead Developer | Production</div>
+                </div>
+                <div class="project-tech"><strong>Technologies:</strong> Python, Redis, Git, CI/CD</div>
+                <div class="project-description">
+                    Comprehensive network outage monitoring and workflow management system. Features intelligent outage correlation, Redis-based queue management, and automated notification workflows for supervisors and technicians.
+                </div>
+            </div>
+        </section>
+
+        <div class="two-column">
+            <section class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="education-item">
+                    <div class="degree">Bachelor of Science in Physics</div>
+                    <div class="school">Fort Hays State University | Hays, KS</div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Key Qualifications</h2>
+                <div class="job-description">
+                    <ul>
+                        <li><strong>ITIL Expertise:</strong> Extensive ticketing system experience</li>
+                        <li><strong>Telecommunications:</strong> 6+ years specialized industry experience</li>
+                        <li><strong>Leadership:</strong> Proven team mentoring and technical leadership</li>
+                        <li><strong>Security:</strong> Web application security and authentication systems</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script>
+    function downloadPNG() {
+        const container = document.querySelector('.container');
+        html2canvas(container, {scale:2}).then(canvas => {
+            const link = document.createElement('a');
+            link.download = 'resume.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        });
+    }
+    </script>
+</body>
+</html>

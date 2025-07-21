@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brendan A. Burgee - Cover Letter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: white;
+            font-size: 12px;
+        }
+        
+        .container {
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.75in;
+            min-height: 11in;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: left;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #2c5aa0;
+            margin-bottom: 30px;
+        }
+        
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+        
+        .contact-info {
+            font-size: 11px;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info a {
+            color: #2c5aa0;
+            text-decoration: none;
+        }
+        
+        .divider {
+            border-top: 1px solid #e0e0e0;
+            margin: 15px 0;
+        }
+        
+        .date-section {
+            margin-bottom: 25px;
+        }
+        
+        .date {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .recipient {
+            line-height: 1.4;
+            color: #444;
+        }
+        
+        .recipient-name {
+            font-weight: bold;
+            color: #2c5aa0;
+            font-size: 13px;
+        }
+        
+        .recipient-title, .company {
+            color: #666;
+            font-size: 11px;
+        }
+        
+        .salutation {
+            margin: 25px 0;
+            font-weight: 500;
+            color: #333;
+        }
+        
+        .letter-body {
+            margin-bottom: 25px;
+        }
+        
+        .paragraph {
+            margin-bottom: 18px;
+            text-align: justify;
+            line-height: 1.7;
+            color: #444;
+        }
+        
+        .closing {
+            margin-top: 30px;
+        }
+        
+        .closing-phrase {
+            margin-bottom: 40px;
+            color: #333;
+        }
+        
+        .signature {
+            font-weight: 500;
+            color: #2c5aa0;
+            font-size: 24px;
+            font-family: 'Satisfy', cursive;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #e3f2fd 0%, transparent 100%);
+            padding: 1px 3px;
+            border-radius: 2px;
+        }
+        
+        @media print {
+            .container {
+                box-shadow: none;
+                padding: 0.75in;
+            }
+            .print-hide {
+                display: none !important;
+            }
+            body {
+                font-size: 11px;
+            }
+            
+            .name {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="print-hide" style="display: flex; justify-content: flex-end; margin: 10px; gap: 8px;">
+        <button onclick="window.print()" style="background: #2c5aa0; color: white; border: none; padding: 6px 14px; border-radius: 3px; cursor: pointer; font-size: 11px;">Download PDF</button>
+        <button onclick="downloadPNG()" style="background: #2c5aa0; color: white; border: none; padding: 6px 14px; border-radius: 3px; cursor: pointer; font-size: 11px;">Download PNG</button>
+    </div>
+    <div class="container">
+        <header class="header">
+            <h1 class="name">Brendan A. Burgee</h1>
+            <div class="contact-info">
+                <a href="mailto:brendanburgee@gmail.com">brendanburgee@gmail.com</a> | 310.592.5937
+            </div>
+        </header>
+
+        <div class="divider"></div>
+
+        <div class="date-section">
+            <div class="date">July 27th, 2025</div>
+            
+            <div class="recipient">
+                <div class="recipient-name">Chris Griego</div>
+                <div class="recipient-title">Hiring Manager</div>
+                <div class="company">Lumen Technologies</div>
+            </div>
+        </div>
+
+        <div class="salutation">Dear Chris,</div>
+
+        <div class="letter-body">
+            <div class="paragraph">
+                I am writing to formally express my interest in the Lead Software Developer position for your team and for the GOC Dashboard project. Having worked closely with you over the past few months as the current lead developer on this initiative, I am excited about the opportunity to take on the official leadership role and drive this critical project forward.
+            </div>
+
+            <div class="paragraph">
+                In our short time together, I have demonstrated my ability to mentor junior developers, conduct thorough code reviews, and work effectively with cross-functional teams to meet project deliverables. The modular, component-based architecture I've begun to implement will ensure the scalability and maintainability that will be crucial as we expand the dashboard's capabilities.
+            </div>
+
+            <div class="paragraph">
+                I am particularly excited about the opportunity to formalize my leadership role and continue driving innovation in both the frontend user experience and backend performance optimization. My deep understanding of ITIL principles, combined with my telecommunications industry experience and technical expertise in Angular and Node.js, makes me well-equipped to lead this team toward successful project completion.
+            </div>
+
+            <div class="paragraph">
+                Thank you for considering my application for this position. I look forward to discussing how I can continue contributing to the success of the GOC Dashboard project in an official leadership capacity.
+            </div>
+        </div>
+
+        <div class="closing">
+            <div class="closing-phrase">Sincerely,</div>
+            <div class="signature">Brendan A. Burgee</div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script>
+function downloadPNG() {
+    const container = document.querySelector('.container');
+    html2canvas(container, {scale:2}).then(canvas => {
+        const link = document.createElement('a');
+        link.download = 'cover-letter.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+    });
+}
+</script>
+</html>
